@@ -116,7 +116,7 @@ header{
             }
         }
         .button-presupuesto{
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 1024px){
                 display: none;
             }
             button{
@@ -646,15 +646,20 @@ main#home{
         align-items: center;
         flex-direction: column;
         margin: auto;
+        z-index: 9999;
         .container{
-            width: 80%;
-            height: 70%;
+            width: 95%;
+            height: 95%;
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px 30px;
             position: relative;
+            @media screen and (min-width: 1024px){
+                width: 80%;
+                height: 850%;
+            }
         }
         .icon{
             padding-right: 10px;
@@ -686,12 +691,16 @@ main#home{
                     padding-bottom: 20px;
                 }
             }
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
         }
         .right{
             display: flex;
             justify-content: space-around;
             align-items: start;
             flex-direction: column;
+            width: 100%;
             input{
                 margin-bottom: 15px;
                 width: 100%;
@@ -718,6 +727,9 @@ main#home{
                 right: 20px;
                 cursor: pointer;
                 padding: 5px;
+            }
+            @media screen and (min-width: 1025px) {
+                width: 50%;
             }
         }
     }

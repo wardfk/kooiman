@@ -111,7 +111,7 @@ window.onload = function () {
 
             projectList[0].append(contain);
         }
-    }
+    };
     
     
     let filter = document.getElementById('filter');

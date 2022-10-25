@@ -1,0 +1,672 @@
+header .navbar .button-presupuesto button, main section.banner .banner-up .content button, main section.gama .left button, main section.contact .right input[type="submit"] {
+  padding: 8px 16px;
+  background: linear-gradient(60deg, #d2b871 0%, #e0ce96 100%);
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+  margin: 0 !important;
+  line-height: 1.2em;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .topbar {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 1025px) {
+  header .topbar .topbar {
+    display: none;
+  }
+}
+
+header .topbar a {
+  color: white;
+  text-decoration: none;
+}
+
+header .topbar .left {
+  display: flex;
+}
+
+header .topbar .left div {
+  padding: 0px 10px;
+}
+
+header .topbar .right {
+  display: flex;
+}
+
+header .topbar .right div {
+  padding: 5px 10px;
+}
+
+header .topbar .right div i {
+  margin-right: 8px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  header .topbar {
+    display: none;
+  }
+}
+
+header .navbar {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+  header .navbar {
+    background-color: black;
+  }
+}
+
+header .navbar .logo {
+  width: 25%;
+}
+
+header .navbar .logo a img {
+  width: 70%;
+}
+
+header .navbar .nav {
+  width: 50%;
+}
+
+header .navbar .nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px !important;
+  margin: 0;
+}
+
+header .navbar .nav ul li {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+header .navbar .nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .navbar .button-presupuesto button h2 {
+  font-size: 18px;
+  color: white;
+}
+
+header .navbar .button-presupuesto button:hover {
+  padding: 8px 16px;
+  background-color: #ffffff27 !important;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 1490px) {
+  header {
+    padding: 0px 50px;
+  }
+}
+
+main section.banner .banner-up {
+  height: 550px;
+  background: url("../assets/img/banner-up.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main section.banner .banner-up .content {
+  max-width: 1440px;
+  width: 50%;
+  height: 350px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+}
+
+main section.banner .banner-up .content button p {
+  font-size: 18px;
+  line-height: 1em;
+}
+
+main section.banner .banner-up .content button:hover {
+  padding: 8px 16px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+main section.banner .banner-down {
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1490px) {
+  main section.banner .banner-down {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main section.banner .banner-down {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.banner .banner-down {
+    padding: 40px 20px;
+  }
+}
+
+main section.banner .banner-down .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+main section.banner .banner-down .servicios {
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section.banner .banner-down .servicios .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section.banner .banner-down .servicios .row article {
+  padding: 7px 14px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main section.banner .banner-down .servicios .row article img {
+  max-height: 40px;
+  color: blue;
+}
+
+main section.banner .banner-down .servicios .row article h3 {
+  font-size: 20px;
+}
+
+main section.banner .banner-down .servicios .row article p {
+  font-size: 16px;
+}
+
+main section.foto-home {
+  height: 450px;
+  background: url("../assets/img/foto-home.jpg") no-repeat center center/cover;
+}
+
+main section.gama {
+  padding: 60px 0px;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1490px) {
+  main section.gama {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main section.gama {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.gama {
+    padding: 40px 20px;
+  }
+}
+
+main section.gama .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+main section.gama .left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main section.gama .left button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+main section.gama .left button h2 {
+  font-size: 18px;
+  color: white;
+}
+
+main section.gama .left button:hover {
+  padding: 8px 16px;
+  background-color: #ffffff27 !important;
+  border: 1px solid white;
+}
+
+main section.gama .right {
+  animation: blurblur 1.5s cubic-bezier(0.25, 0.5, 0.75, 1, 1.25);
+}
+
+main section.gama .right .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 9px 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.8s;
+}
+
+main section.gama .right .accordion::after {
+  content: '+';
+  position: absolute;
+  left: 82%;
+}
+
+main section.gama .right .active, main section.gama .right .accordion:hover {
+  background-color: #ccc;
+}
+
+main section.gama .right .content {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+main section.gama .right .content ul li {
+  list-style-type: none;
+}
+
+@keyframes blurblur {
+  0% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+main section.proceso {
+  background-color: #D2B87120;
+  padding: 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media screen and (max-width: 1490px) {
+  main section.proceso {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main section.proceso {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.proceso {
+    padding: 40px 20px;
+  }
+}
+
+main section.proceso .pasos-proceso {
+  display: flex;
+  padding-top: 30px;
+}
+
+main section.proceso .pasos-proceso article {
+  padding: 15px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section.proceso .pasos-proceso article .cont-img {
+  width: 70px;
+  height: 70px;
+  background-color: #D2B871;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.34);
+  justify-content: center;
+  align-items: center;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-bottom: 20px;
+}
+
+main section.proceso .pasos-proceso article .cont-img img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+main section.proceso .pasos-proceso article h4 {
+  text-transform: uppercase;
+}
+
+main section.our-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 1490px) {
+  main section.our-projects {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main section.our-projects {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.our-projects {
+    padding: 40px 20px;
+  }
+}
+
+main section.our-projects h2, main section.our-projects h3 {
+  padding-bottom: 20px;
+}
+
+main section.our-projects .project-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section.our-projects .project-wrapper .filters select:hover {
+  cursor: pointer;
+}
+
+main section.our-projects .project-wrapper .project-list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section.our-projects .project-wrapper .project-list div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section.our-projects .project-wrapper .project-list div img {
+  width: 100%;
+  max-width: 250px;
+  height: 150px;
+}
+
+main section.our-projects .contain-class {
+  max-width: 200px;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.34);
+  padding: 2px 3px;
+  margin: 15px;
+  position: relative;
+}
+
+main section.our-projects .contain-class:hover h4 {
+  display: block;
+  z-index: 99;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+main section.our-projects .contain-class:hover img {
+  filter: brightness(0.7);
+}
+
+main section.our-projects .contain-class h4 {
+  display: none;
+}
+
+main section.contact {
+  background-color: #D2B87120 !important;
+  padding: 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+main section.contact .icon {
+  padding-right: 10px;
+}
+
+main section.contact a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1490px) {
+  main section.contact {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main section.contact {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.contact {
+    padding: 40px 20px;
+  }
+}
+
+main section.contact .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+main section.contact .left .first {
+  padding-bottom: 25px;
+}
+
+main section.contact .left .first h2 {
+  padding-bottom: 20px;
+}
+
+main section.contact .left .second h4 {
+  padding-bottom: 20px;
+}
+
+main section.contact .left .second div {
+  margin-bottom: 5px;
+}
+
+main section.contact .right {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+}
+
+main section.contact .right input {
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+  background-color: #D2B87140;
+}
+
+main section.contact .right input:hover {
+  background-color: #D2B87190;
+}
+
+main section.contact .right input[type="submit"] {
+  width: 120px;
+}
+
+main section.contact .right input[type="checkbox"] {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+main section.contact .right label {
+  margin-right: 30px;
+}
+
+main section.map {
+  height: 100%;
+  max-height: 450px !important;
+}
+
+main section.map iframe {
+  width: 100%;
+  max-width: 2500px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 25px 0px;
+}
+
+@media screen and (max-width: 1490px) {
+  footer {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 60px 40px;
+  }
+  footer .center, footer .right {
+    padding-top: 20px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 40px 20px;
+  }
+  footer ul {
+    margin: 0px !important;
+  }
+}
+
+footer .center, footer .right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer img {
+  width: 50%;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 8px !important;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer i {
+  margin-right: 10px;
+}

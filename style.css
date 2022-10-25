@@ -144,7 +144,7 @@ header .navbar .nav ul li:hover a {
   color: #ffffff27 !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   header .navbar .button-presupuesto {
     display: none;
   }
@@ -779,17 +779,25 @@ main#home section#presupuesto {
   align-items: center;
   flex-direction: column;
   margin: auto;
+  z-index: 9999;
 }
 
 main#home section#presupuesto .container {
-  width: 80%;
-  height: 70%;
+  width: 95%;
+  height: 95%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
   position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  main#home section#presupuesto .container {
+    width: 80%;
+    height: 850%;
+  }
 }
 
 main#home section#presupuesto .icon {
@@ -836,11 +844,18 @@ main#home section#presupuesto .left .first h2 {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  main#home section#presupuesto .left {
+    display: none;
+  }
+}
+
 main#home section#presupuesto .right {
   display: flex;
   justify-content: space-around;
   align-items: start;
   flex-direction: column;
+  width: 100%;
 }
 
 main#home section#presupuesto .right input {
@@ -873,6 +888,12 @@ main#home section#presupuesto .right span {
   right: 20px;
   cursor: pointer;
   padding: 5px;
+}
+
+@media screen and (min-width: 1025px) {
+  main#home section#presupuesto .right {
+    width: 50%;
+  }
 }
 
 main#nosotros section.banner {

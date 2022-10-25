@@ -1,4 +1,4 @@
-header .show-popup .wrapper .button-presupuesto button, main#home section.banner .banner-up .content button, main#home section.gama .left button, main#home section.contact .right input[type="submit"], main#home section#presupuesto .right input[type="submit"], main#nosotros section.gama .left button, main#contacto section.contact .right input[type="submit"] {
+header .show-popup .wrapper .button-presupuesto button, main#home section.banner .banner-up .content button, main#home section.gama .left button, main#home section.contact .right input[type="submit"], main#home section#presupuesto .right input[type="submit"], main#nosotros section.gama .left button, main#nosotros section#presupuesto .right input[type="submit"], main#contacto section.contact .right input[type="submit"], main#contacto section#presupuesto .right input[type="submit"] {
   padding: 8px 16px;
   background: linear-gradient(60deg, #d2b871 0%, #e0ce96 100%);
   color: white;
@@ -1185,6 +1185,135 @@ main#nosotros section#section-contacto div button h4 {
   font-weight: normal;
 }
 
+main#nosotros section#presupuesto {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  z-index: 9999;
+}
+
+main#nosotros section#presupuesto .container {
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  main#nosotros section#presupuesto .container {
+    width: 80%;
+    height: 850%;
+  }
+}
+
+main#nosotros section#presupuesto .icon {
+  padding-right: 10px;
+}
+
+main#nosotros section#presupuesto a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1490px) {
+  main#nosotros section#presupuesto {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main#nosotros section#presupuesto {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main#nosotros section#presupuesto {
+    padding: 40px 20px;
+  }
+}
+
+main#nosotros section#presupuesto .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+main#nosotros section#presupuesto .left .first {
+  padding-bottom: 25px;
+}
+
+main#nosotros section#presupuesto .left .first h2 {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  main#nosotros section#presupuesto .left {
+    display: none;
+  }
+}
+
+main#nosotros section#presupuesto .right {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+
+main#nosotros section#presupuesto .right input {
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+  background-color: #D2B87140;
+}
+
+main#nosotros section#presupuesto .right input:hover {
+  background-color: #D2B87190;
+}
+
+main#nosotros section#presupuesto .right input[type="submit"] {
+  width: 120px;
+}
+
+main#nosotros section#presupuesto .right input[type="checkbox"] {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+main#nosotros section#presupuesto .right label {
+  margin-right: 30px;
+}
+
+main#nosotros section#presupuesto .right span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media screen and (min-width: 1025px) {
+  main#nosotros section#presupuesto .right {
+    width: 50%;
+  }
+}
+
 main#contacto section.contact {
   background-color: #D2B87120 !important;
   padding: 60px 0;
@@ -1287,6 +1416,135 @@ main#contacto section.map {
 main#contacto section.map iframe {
   width: 100%;
   max-width: 2500px;
+}
+
+main#contacto section#presupuesto {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  z-index: 9999;
+}
+
+main#contacto section#presupuesto .container {
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  main#contacto section#presupuesto .container {
+    width: 80%;
+    height: 850%;
+  }
+}
+
+main#contacto section#presupuesto .icon {
+  padding-right: 10px;
+}
+
+main#contacto section#presupuesto a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1490px) {
+  main#contacto section#presupuesto {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main#contacto section#presupuesto {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto section#presupuesto {
+    padding: 40px 20px;
+  }
+}
+
+main#contacto section#presupuesto .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+main#contacto section#presupuesto .left .first {
+  padding-bottom: 25px;
+}
+
+main#contacto section#presupuesto .left .first h2 {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  main#contacto section#presupuesto .left {
+    display: none;
+  }
+}
+
+main#contacto section#presupuesto .right {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+
+main#contacto section#presupuesto .right input {
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+  background-color: #D2B87140;
+}
+
+main#contacto section#presupuesto .right input:hover {
+  background-color: #D2B87190;
+}
+
+main#contacto section#presupuesto .right input[type="submit"] {
+  width: 120px;
+}
+
+main#contacto section#presupuesto .right input[type="checkbox"] {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+main#contacto section#presupuesto .right label {
+  margin-right: 30px;
+}
+
+main#contacto section#presupuesto .right span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media screen and (min-width: 1025px) {
+  main#contacto section#presupuesto .right {
+    width: 50%;
+  }
 }
 
 footer {

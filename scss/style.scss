@@ -641,12 +641,14 @@ main#home{
         position: fixed;
         top: 0;
         left: 0;
+        // overflow: hidden;
         display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
         z-index: 9999;
+        
         .container{
             width: 95%;
             height: 95%;
@@ -965,6 +967,105 @@ main#nosotros{
             }
         }
     }
+    section#presupuesto{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        z-index: 9999;
+        .container{
+            width: 95%;
+            height: 95%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            position: relative;
+            @media screen and (min-width: 1024px){
+                width: 80%;
+                height: 850%;
+            }
+        }
+        .icon{
+            padding-right: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        @media screen and (max-width: 1490px){
+            padding: 60px 50px;
+        }
+        @media screen and (max-width: 1024px){
+            padding: 60px 40px;
+        }
+        @media screen and (max-width: 768px){
+            padding: 40px 20px;
+        }
+        .left{
+            // width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            flex-direction: column;
+            padding-bottom: 40px;
+            .first{
+                padding-bottom: 25px;
+                h2{
+                    padding-bottom: 20px;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            flex-direction: column;
+            width: 100%;
+            input{
+                margin-bottom: 15px;
+                width: 100%;
+                border: none;
+                background-color: #D2B87140;
+                &:hover{
+                    background-color: #D2B87190;
+                }
+            }
+            input[type="submit"]{
+                width: 120px;
+                @extend %button;
+            }
+            input[type="checkbox"]{
+                margin-top: 15px;
+                margin-right: 5px;
+            }
+            label{
+                margin-right: 30px; 
+            }
+            span{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                padding: 5px;
+            }
+            @media screen and (min-width: 1025px) {
+                width: 50%;
+            }
+        }
+    }
 }
 main#contacto{
     section.contact{
@@ -1052,6 +1153,105 @@ main#contacto{
             max-width: 2500px;
         }
     } 
+    section#presupuesto{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        z-index: 9999;
+        .container{
+            width: 95%;
+            height: 95%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            position: relative;
+            @media screen and (min-width: 1024px){
+                width: 80%;
+                height: 850%;
+            }
+        }
+        .icon{
+            padding-right: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        @media screen and (max-width: 1490px){
+            padding: 60px 50px;
+        }
+        @media screen and (max-width: 1024px){
+            padding: 60px 40px;
+        }
+        @media screen and (max-width: 768px){
+            padding: 40px 20px;
+        }
+        .left{
+            // width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            flex-direction: column;
+            padding-bottom: 40px;
+            .first{
+                padding-bottom: 25px;
+                h2{
+                    padding-bottom: 20px;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            flex-direction: column;
+            width: 100%;
+            input{
+                margin-bottom: 15px;
+                width: 100%;
+                border: none;
+                background-color: #D2B87140;
+                &:hover{
+                    background-color: #D2B87190;
+                }
+            }
+            input[type="submit"]{
+                width: 120px;
+                @extend %button;
+            }
+            input[type="checkbox"]{
+                margin-top: 15px;
+                margin-right: 5px;
+            }
+            label{
+                margin-right: 30px; 
+            }
+            span{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                padding: 5px;
+            }
+            @media screen and (min-width: 1025px) {
+                width: 50%;
+            }
+        }
+    }
 }
 
 footer{

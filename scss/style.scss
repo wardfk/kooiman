@@ -776,12 +776,12 @@ main#nosotros{
             flex-direction: column;
             #myBtn{
                 padding: 8px 16px;
-    background: linear-gradient(60deg, rgba(210,184,113,1) 0%, rgba(224,206,150,1) 100%);
-    color: white;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+                background: linear-gradient(60deg, rgba(210,184,113,1) 0%, rgba(224,206,150,1) 100%);
+                color: white;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             @media screen and (min-width: 768px) {
                 padding-right: 20px;
@@ -819,7 +819,8 @@ main#nosotros{
                 max-height: 100%;
                 height: 100%;
                 img{
-                    width: 450px;
+                    max-width: 450px;
+                    width: 100%;
                     height: 330px;
                     object-fit: cover;
                     object-position: center;
@@ -841,6 +842,7 @@ main#nosotros{
                     }
                 }
                 @media screen and (max-width: 768px) {
+                    margin-top: 20px !important;
                     .img-container{
                         width: 100%;
                         height: 100%;
@@ -872,6 +874,10 @@ main#nosotros{
             justify-content: space-around;
             align-items: flex-start;
             flex-direction: column;
+            margin-top: 20px;
+            @media screen and (min-width:768px){
+                margin: 0px;
+            }
             h2{
                 font-size: 24px;
                 margin-bottom: 10px;

@@ -1,4 +1,4 @@
-header .show-popup .wrapper .button-presupuesto button, main#home section.banner .banner-up .content button, main#home section.gama .left button, main#home section.contact .right input[type="submit"], main#home section.presupuesto .right input[type="submit"], main#nosotros section.gama .left button, main#contacto section.contact .right input[type="submit"] {
+header .show-popup .wrapper .button-presupuesto button, main#home section.banner .banner-up .content button, main#home section.gama .left button, main#home section.contact .right input[type="submit"], main#home section#presupuesto .right input[type="submit"], main#nosotros section.gama .left button, main#contacto section.contact .right input[type="submit"] {
   padding: 8px 16px;
   background: linear-gradient(60deg, #d2b871 0%, #e0ce96 100%);
   color: white;
@@ -767,21 +767,21 @@ main#home section.map iframe {
   max-width: 2500px;
 }
 
-main#home section.presupuesto {
+main#home section#presupuesto {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: auto;
 }
 
-main#home section.presupuesto .container {
+main#home section#presupuesto .container {
   width: 80%;
   height: 70%;
   background-color: white;
@@ -792,35 +792,35 @@ main#home section.presupuesto .container {
   position: relative;
 }
 
-main#home section.presupuesto .icon {
+main#home section#presupuesto .icon {
   padding-right: 10px;
 }
 
-main#home section.presupuesto a {
+main#home section#presupuesto a {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
 
 @media screen and (max-width: 1490px) {
-  main#home section.presupuesto {
+  main#home section#presupuesto {
     padding: 60px 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  main#home section.presupuesto {
+  main#home section#presupuesto {
     padding: 60px 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  main#home section.presupuesto {
+  main#home section#presupuesto {
     padding: 40px 20px;
   }
 }
 
-main#home section.presupuesto .left {
+main#home section#presupuesto .left {
   display: flex;
   justify-content: space-around;
   align-items: start;
@@ -828,49 +828,51 @@ main#home section.presupuesto .left {
   padding-bottom: 40px;
 }
 
-main#home section.presupuesto .left .first {
+main#home section#presupuesto .left .first {
   padding-bottom: 25px;
 }
 
-main#home section.presupuesto .left .first h2 {
+main#home section#presupuesto .left .first h2 {
   padding-bottom: 20px;
 }
 
-main#home section.presupuesto .right {
+main#home section#presupuesto .right {
   display: flex;
   justify-content: space-around;
   align-items: start;
   flex-direction: column;
 }
 
-main#home section.presupuesto .right input {
+main#home section#presupuesto .right input {
   margin-bottom: 15px;
   width: 100%;
   border: none;
   background-color: #D2B87140;
 }
 
-main#home section.presupuesto .right input:hover {
+main#home section#presupuesto .right input:hover {
   background-color: #D2B87190;
 }
 
-main#home section.presupuesto .right input[type="submit"] {
+main#home section#presupuesto .right input[type="submit"] {
   width: 120px;
 }
 
-main#home section.presupuesto .right input[type="checkbox"] {
+main#home section#presupuesto .right input[type="checkbox"] {
   margin-top: 15px;
   margin-right: 5px;
 }
 
-main#home section.presupuesto .right label {
+main#home section#presupuesto .right label {
   margin-right: 30px;
 }
 
-main#home section.presupuesto .right span {
+main#home section#presupuesto .right span {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
+  padding: 5px;
 }
 
 main#nosotros section.banner {

@@ -18,6 +18,23 @@ window.onload = function () {
         });
     }
 
+    // open presupuesto
+    let buttonPresupuesto = document.getElementsByClassName('button-presupuesto');
+    let presupuesto = document.getElementById('presupuesto');
+    
+    document.querySelectorAll('.button-presupuesto').forEach(item => {
+        item.addEventListener('click', event => {
+            presupuesto.style.display = 'flex';
+        })
+    })
+    
+    // close popup-presupuesto
+    let closePresupuesto = document.getElementsByClassName('close-presupuesto');
+
+    closePresupuesto[0].addEventListener('click', function(){
+        presupuesto.style.display = 'none';
+    })
+
     // filter
 
     const projects = [
@@ -158,4 +175,7 @@ window.onload = function () {
             index--;
           }
     })
+
+
+
 }

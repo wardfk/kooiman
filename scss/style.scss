@@ -297,6 +297,9 @@ main#home{
                 padding-bottom: 40px;
             }
             .servicios{
+                opacity: 0;
+                transition: all 1500ms ease-in-out;
+                transform: scale(0.1);
                 max-width: 1440px;
                 width: 100%;
                 text-align: center;
@@ -327,6 +330,10 @@ main#home{
                     }
                 }
             }
+            .servicios-active{
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     }
     section.foto-home{
@@ -352,6 +359,7 @@ main#home{
             padding: 40px 20px;
         }
         .left{
+            
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
@@ -421,7 +429,7 @@ main#home{
               }
         } 
     }
-    section.proceso{
+    .proceso{
         background-color: #D2B87120;
         padding: 60px 0;
         width: 100%;
@@ -440,6 +448,10 @@ main#home{
             padding: 40px 20px;
         }
         .pasos-proceso{
+            opacity: 0;
+            transition: all 2000ms ;
+            transform: translateY(-50%);
+            // transform: ;
             display: flex;
             padding-top: 30px;
             article{
@@ -472,7 +484,12 @@ main#home{
                 }
             }
         }
+        .proceso-active{
+            opacity: 1;
+            transform: translateY(0%);
+        }
     } 
+
     section.our-projects{
         display: flex;
         justify-content: center;

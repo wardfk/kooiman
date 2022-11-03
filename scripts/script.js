@@ -1,3 +1,5 @@
+// const { Alert } = require("bootstrap");
+
 window.onload = function () {
 
     // accordeon
@@ -176,6 +178,25 @@ window.onload = function () {
           }
     })
 
-
-
 }
+// animation servicios
+window.addEventListener('scroll', ()=>{
+    let servicios = document.getElementsByClassName('servicios');
+    let contentPostition = servicios[0].getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+    if(contentPostition < screenPosition){
+        // alert('sdklf')
+        servicios[0].classList.add('servicios-active');
+    } else {
+        servicios[0].classList.remove('servicios-active');
+    }
+
+    let proceso = document.getElementsByClassName('pasos-proceso');
+    let procesoPostition = proceso[0].getBoundingClientRect().top;
+    if(procesoPostition < screenPosition){
+        // alert('sdklf')
+        proceso[0].classList.add('proceso-active');
+    } else {
+        proceso[0].classList.remove('proceso-active')
+    }
+})

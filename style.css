@@ -363,6 +363,9 @@ main#home section.banner .banner-down .title {
 }
 
 main#home section.banner .banner-down .servicios {
+  opacity: 0;
+  transition: all 1500ms ease-in-out;
+  transform: scale(0.1);
   max-width: 1440px;
   width: 100%;
   text-align: center;
@@ -397,6 +400,11 @@ main#home section.banner .banner-down .servicios .row article h3 {
 
 main#home section.banner .banner-down .servicios .row article p {
   font-size: 16px;
+}
+
+main#home section.banner .banner-down .servicios-active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 main#home section.foto-home {
@@ -508,7 +516,7 @@ main#home section.gama .right .content ul li {
   }
 }
 
-main#home section.proceso {
+main#home .proceso {
   background-color: #D2B87120;
   padding: 60px 0;
   width: 100%;
@@ -520,29 +528,32 @@ main#home section.proceso {
 }
 
 @media screen and (max-width: 1490px) {
-  main#home section.proceso {
+  main#home .proceso {
     padding: 60px 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  main#home section.proceso {
+  main#home .proceso {
     padding: 60px 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  main#home section.proceso {
+  main#home .proceso {
     padding: 40px 20px;
   }
 }
 
-main#home section.proceso .pasos-proceso {
+main#home .proceso .pasos-proceso {
+  opacity: 0;
+  transition: all 2000ms;
+  transform: translateY(-50%);
   display: flex;
   padding-top: 30px;
 }
 
-main#home section.proceso .pasos-proceso article {
+main#home .proceso .pasos-proceso article {
   padding: 15px 20px;
   text-align: center;
   display: flex;
@@ -551,7 +562,7 @@ main#home section.proceso .pasos-proceso article {
   flex-direction: column;
 }
 
-main#home section.proceso .pasos-proceso article .cont-img {
+main#home .proceso .pasos-proceso article .cont-img {
   width: 70px;
   height: 70px;
   background-color: #D2B871;
@@ -563,7 +574,7 @@ main#home section.proceso .pasos-proceso article .cont-img {
   margin-bottom: 20px;
 }
 
-main#home section.proceso .pasos-proceso article .cont-img img {
+main#home .proceso .pasos-proceso article .cont-img img {
   width: 50px;
   height: 50px;
   margin-top: 10px;
@@ -571,8 +582,13 @@ main#home section.proceso .pasos-proceso article .cont-img img {
   transform: rotate(-45deg);
 }
 
-main#home section.proceso .pasos-proceso article h4 {
+main#home .proceso .pasos-proceso article h4 {
   text-transform: uppercase;
+}
+
+main#home .proceso .proceso-active {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 main#home section.our-projects {
